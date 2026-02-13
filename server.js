@@ -10,3 +10,6 @@ console.log("JWT Secret:", process.env.JWT_SECRET_KEY);
 app.listen(process.env.PORT, () => {
   console.log("Server running");
 });
+app.get("/", (req, res) => {
+  res.send("Task Management API is running 🚀");
+});
