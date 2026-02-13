@@ -7,6 +7,6 @@ const adminRoutes=require('./routes/adminroutes')
 connecttoDb()
 console.log("JWT Secret:", process.env.JWT_SECRET_KEY);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server running");
 });
